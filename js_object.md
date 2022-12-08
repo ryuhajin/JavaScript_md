@@ -63,7 +63,7 @@ console.log(Employee.firstname);
 // undefined
 
 ```
-
+<br>
 
 ## 속성 (property)
 
@@ -106,9 +106,7 @@ let a = {x: 1, x: 2};
 console.log(a); // {x: 2}
 
 ```
-
-
-<br><br>
+<br>
 
 ## 객체를 생성하는 방법
 
@@ -162,6 +160,8 @@ var Person = functino(name) {
 console.log(foo.name) // foo
 
 ```
+
+<br>
 
 ## 객체 리터럴 방식와 생성자 함수 방식의 차이점
 

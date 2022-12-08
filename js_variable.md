@@ -7,11 +7,9 @@ a라는 변수를 선언한 코드.
 
 변수를 선언하고 아무 값도 할당하지 않으면 **undefined** 이라는 초기값을 가짐.
 
-<br><br>
+<br>
 
 ## 변수에 값 할당하기
-
-<br>
 
 ``` js
 let a;
@@ -35,11 +33,9 @@ console.log(a); //hello world
 a = false;
 console.log(a); //false
 ```
-<br><br>
+<br>
 
 ## 변수명 규칙
-
-<br>
 
 - 영어와 한글 모두 사용 가능.
 - 숫자도 사용 가능하나 맨 앞은 숫자로 시작되어선 안됨.
@@ -65,11 +61,9 @@ let 1myname;
 let continue;
 let function;
 ```
-<br><br>
+<br>
 
 ## 변수의 타입 확인하기 - typeof
-
-<br>
 
 - 변수에 할당된 값의 타입을 추측하기 어려울 때 **typeof** 라는 예악어로 확인 가능.
   
