@@ -56,6 +56,8 @@ let $ryu;
 ```
 
 - 예약어는 사용 불가능함.
+> ### 예약어란?  
+> 언어에서 미리 지정해놓은 명령어.
 
 ``` js
 // 사용 불가능한 변수명
@@ -89,5 +91,41 @@ console.log(typeof divEL);
 ```
 <br>
 
-> ### 예약어란?  
-> 언어에서 미리 지정해놓은 명령어.
+typeof 연산자는 두 가지 형태의 문법을 지원한다.
+
+1. typeof x
+2. typeof(x)
+
+괄호가 있든 없든 결과는 동일함.
+
+``` js
+
+typeof undefined // "undefined"
+
+typeof 0 // "number"
+
+typeof 10n // "bigint"
+
+typeof true // "boolean"
+
+typeof "foo" // "string"
+
+typeof Symbol("id") // "symbol"
+
+```
+
+아래 세 가지 사례는 자세한 설명이 필요하다.
+
+``` js
+
+typeof Math // "object"  (1)
+
+typeof null // "object"  (2)
+
+typeof alert // "function"  (3)
+
+```
+
+1. Math는 수학 연산을 제공하는 내장 객체이므로 "object"가 출력된다.
+2. null의 결과는 "object"이지만 null은 **별도의 고유한 자료형을 가지는 특수 값**으로 객체가 아니다. 즉, 언어 자체의 오류이므로 null은 객체가 아님에 유의하자.
+3. typeof 는 연산자가 함수면 "function"을 반환한다. 그런데 '함수'형은 따로 없다. 함수는 객체(object)에 속하기 때문이다. 형식적으로 잘못되긴 했지만, 호환성 유지를 위해 남겨진 상태이다. 실무에서는 유용하게 사용되기도 한다.
