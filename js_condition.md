@@ -122,4 +122,3 @@ switch 문 사용 예시
     default :
       document.write ("해당하는 음료수가 존재하지 않습니다.");
   }
-```
